@@ -127,7 +127,7 @@ Porkbun + Cloudflare DNS — Cost & Setup Guide
 
 Purpose
 -------
-This guide explains the costs and setup steps if the club uses
+This guide explains the costs and setup steps for
 **Porkbun as the domain registrar** with **Cloudflare DNS**.
 
 Cost Breakdown (.org domain)
