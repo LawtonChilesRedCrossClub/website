@@ -107,3 +107,74 @@ At the start of each school year:
 • Faculty Advisor: (update yearly)  
 
 End of Guide
+
+
+==================================================
+LCHS Red Cross Club — Domain Management Guide
+==================================================
+
+Purpose
+-------
+This guide explains how to manage and renew the club’s custom domain
+(e.g., www.lchsredcross.org) so that the website remains live year after year.
+
+Registrar Choice
+----------------
+We recommend using **Porkbun** or **Cloudflare Registrar** for stability and low renewal costs.
+- Porkbun: ~$11/year renewal
+- Cloudflare: ~$10/year renewal
+- GoDaddy is *not recommended* — cheap first-year promos but renewals cost $20–25+.
+
+Registrar Account
+-----------------
+• Register the domain under the **club Gmail account** (not a personal email).  
+• Club Gmail: lchsredcrossclub@gmail.com  
+• This ensures that future officers can reset passwords and manage billing.
+
+Billing & Renewal
+-----------------
+• Enable **auto-renew** in the registrar settings.  
+• Connect a **club debit card**, prepaid card, or advisor’s card (with reimbursement).  
+• Renewal is around $10–11 per year.  
+• If possible, pay for **3–10 years upfront** to prevent lapses.
+
+How to Configure Domain with GitHub Pages
+-----------------------------------------
+1. In the registrar’s DNS settings:
+   - Add a CNAME record: Host = www, Value = <org>.github.io
+     Example: lchs-red-cross-club.github.io
+   - For the root domain (lchsredcross.org without www):
+     - If supported, add ALIAS/ANAME → www.lchsredcross.org
+     - Otherwise, set a URL redirect to https://www.lchsredcross.org
+
+2. In GitHub:
+   - Repo → Settings → Pages → Custom domain = www.lchsredcross.org
+   - Save, then check "Enforce HTTPS"
+
+3. In the repo root, ensure a file named CNAME exists with:
+   www.lchsredcross.org
+
+Handover Process
+----------------
+At the start of each school year:
+[ ] Verify the domain is active and resolves correctly  
+[ ] Confirm billing info is still valid  
+[ ] Check that auto-renew is enabled  
+[ ] Make sure the club Gmail account is accessible  
+[ ] Document renewal date and cost in the Web Team README  
+
+Contingency Plan
+----------------
+If the domain expires accidentally:
+• Log into the registrar account with club Gmail  
+• Renew the domain manually (can take up to 24 hours to restore)  
+• If lost completely, re-purchase as soon as possible
+
+Quick Reference
+---------------
+Club Gmail: lchsredcrossclub@gmail.com  
+Registrar Login: (use club Gmail)  
+Renewal Cycle: Every year (~$10)  
+Responsible Roles: Org Owners (President + 1 other officer/advisor)
+
+End of Guide
