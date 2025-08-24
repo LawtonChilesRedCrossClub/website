@@ -109,7 +109,7 @@ At the start of each school year:
 End of Guide
 
 
-==================================================
+
 LCHS Red Cross Club — Domain Management Guide
 ==================================================
 
