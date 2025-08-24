@@ -7,7 +7,7 @@ Every team member should add themselves here using a **Pull Request**.
 
 ## Current Members (2025–2026)
 
-- **Brandon P.** — Founder, Class of 2025  
+- **Brandon P.** — Founder, Class of 2026  
 - _(add your name here)_
 
 ---
