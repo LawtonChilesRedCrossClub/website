@@ -97,7 +97,7 @@ Here’s how it works step by step:
 --------------------------------------------------
 To practice, new members should:  
 1. Create a branch called `add-your-name`.  
-2. Open `docs/meet-the-web-team.md`.  
+2. Open `meet-the-web-team.md`.  
 3. Add their name + role to the list.  
 4. Commit changes.  
 5. Open a Pull Request.  
