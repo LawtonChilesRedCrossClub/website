@@ -3,7 +3,7 @@ LCHS Red Cross Club Website — Web Team Onboarding
 
 Welcome to the Web Team 🎉  
 This guide is your step-by-step manual for maintaining the club website.  
-It’s designed to be *complete but easy to follow*.
+It’s designed to be *complete but easy to follow* — perfect for new members.
 
 --------------------------------------------------
 🌐 Live Site
@@ -55,6 +55,57 @@ At least 2 Owners should exist at all times.
 7. Merge to main → GitHub Pages auto-deploys (~2 minutes).  
 
 --------------------------------------------------
+🔄 How Pull Requests (PRs) Work
+--------------------------------------------------
+GitHub uses **branches**, **commits**, and **pull requests** to manage changes.  
+Here’s how it works step by step:
+
+### 1. Branch → Your Safe Workspace
+- A **branch** is like your own copy of the repo where you can work safely.  
+- Example branch names:  
+  - `update-officer-list`  
+  - `add-jane-doe`  
+  - `fix-footer-links`  
+
+### 2. Commit → Save Points
+- A **commit** is like hitting *Save* with a message.  
+- Each commit records what changed and why.  
+- Example commit messages:  
+  - `Add Jane Doe to Meet the Web Team`  
+  - `Update blood drive date in Events`  
+
+### 3. Pull Request (PR) → Ask to Merge
+- A PR is how you propose merging your branch back into `main`.  
+- It lets other Web Team members **review** your changes first.  
+- In the PR, you:  
+  - Write a **title** → short and clear.  
+  - Add a **description** → what changed and why.  
+
+### 4. Review → Peer Check
+- Another Web Team member looks at your PR.  
+- They can:  
+  - Approve ✅  
+  - Suggest changes 📝  
+- Nothing goes live until at least one other team member approves.  
+
+### 5. Merge → Goes Live 🚀
+- Once approved, the PR is merged into `main`.  
+- GitHub Pages automatically redeploys the site within ~2 minutes.  
+
+--------------------------------------------------
+🧪 Practice: “Meet the Web Team” Page
+--------------------------------------------------
+To practice, new members should:  
+1. Create a branch called `add-your-name`.  
+2. Open `docs/meet-the-web-team.md`.  
+3. Add their name + role to the list.  
+4. Commit changes.  
+5. Open a Pull Request.  
+6. Ask another Web Team member to review and approve.  
+
+When merged, their name will appear on the page — and they’ll have learned the entire GitHub workflow 🎉  
+
+--------------------------------------------------
 📋 Common Updates
 --------------------------------------------------
 • Update Officers → edit /content/officers.html  
@@ -82,29 +133,6 @@ At the start of each school year:
 [ ] Promote President/VP to Owner  
 [ ] Verify custom domain + HTTPS still active  
 [ ] Confirm club Gmail is accessible  
-
---------------------------------------------------
-❓ Troubleshooting
---------------------------------------------------
-• CSS/JS not loading → check relative paths + filename case  
-• Old content showing → hard refresh (Ctrl+F5 / Cmd+Shift+R)  
-• 404 page → make sure index.html is in root & Pages is enabled  
-• Broken image → check filename is exact (case-sensitive)  
-• Roll back mistake → use PR “Revert” or restore file from commit history  
-
---------------------------------------------------
-⚙️ Advanced (Optional)
---------------------------------------------------
-• CODEOWNERS → require Web Team review before merging changes  
-• Pull Request Template → ensures checklist (links/images tested, mobile OK)  
-• CONTRIBUTING.md → explains branch → PR → review workflow  
-
---------------------------------------------------
-📧 Contact
---------------------------------------------------
-• Club Email: lchsredcrossclub@gmail.com  
-• Org Owners: Current President + one trusted officer  
-• Faculty Advisor: (update yearly)  
 
 End of Web Team Onboarding Guide
 
