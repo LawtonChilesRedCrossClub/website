@@ -3,7 +3,7 @@ LCHS Red Cross Club Website — Web Team Onboarding
 
 Welcome to the Web Team 🎉  
 This guide is your step-by-step manual for maintaining the club website.  
-It’s designed to be *complete but easy to follow* — perfect for new members.
+It’s designed to be *complete but easy to follow*.
 
 --------------------------------------------------
 🌐 Live Site
