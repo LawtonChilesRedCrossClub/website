@@ -194,90 +194,73 @@ End of Cost & Setup Guide
 
 
 LCHS Red Cross Club — Domain Management Guide
-=============================================
+(Porkbun Registrar + Cloudflare DNS)
+==================================================
 
 Purpose
 -------
 This guide explains how to manage and renew the club’s custom domain
-(e.g., www.lchsredcross.org) so that the website remains live year after year.
+(www.lchsredcross.org) when registered at **Porkbun** and managed with **Cloudflare DNS**.
 
-Registrar Choice
-----------------
-We recommend using **Cloudflare Registrar** or **Porkbun** for stability and low renewal costs.
-- Cloudflare: ~$10/year renewal, no markups
-- Porkbun: ~$11/year renewal
-- GoDaddy is *not recommended* — cheap first-year promos but renewals cost $20–25+.
+Costs
+-----
+- First year: ~$6.68  
+- Annual renewal: ~$10.72  
+- Cloudflare DNS: Free  
 
 Registrar Account
 -----------------
-• Register the domain under the **club Gmail account** (not a personal email).  
-• Club Gmail: lchsredcrossclub@gmail.com  
-• This ensures that future officers can reset passwords and manage billing.
+- Registrar: Porkbun  
+- Login: lchsredcrossclub@gmail.com  
+- Renewal is paid through Porkbun.  
 
-First-Year Setup (Important)
-----------------------------
-For the 2025-2026 setup (Brandon’s graduating year):
-1. Domain is purchased using Brandon’s personal payment card.  
-2. Account login = club Gmail (so it can be passed down).  
-3. **Auto-renew must be turned OFF** after the first purchase to protect Brandon’s billing info.  
-4. Future officers will need to log into Cloudflare with the club Gmail and  
-   - Add their own billing method (advisor’s card, prepaid card, or school card).  
-   - Re-enable auto-renew before the expiration date.  
-5. Optional: Brandon may choose to prepay 2–3 years to give the club extra time.
+DNS Provider
+------------
+- Provider: Cloudflare (Free plan)  
+- Cloudflare provides DNS, DNSSEC, and extra security features.  
+- Porkbun’s nameservers must be set to Cloudflare’s values.  
 
-Billing & Renewal
------------------
-• Renewal is around $10–11 per year.  
-• Preferred: pay multiple years upfront or ensure next officers add billing info.  
-• Future officers should:  
-  - Add their payment method under club Gmail account.  
-  - Enable auto-renew to prevent lapses.  
+Setup Steps
+-----------
+1. Buy domain at Porkbun using club Gmail.  
+2. Add domain in Cloudflare dashboard (Free plan).  
+3. Set Porkbun nameservers → Cloudflare nameservers.  
+4. Enable DNSSEC in Cloudflare, then copy values into Porkbun DNSSEC settings.  
+5. In Cloudflare DNS:  
+   - Add CNAME record: `www` → `<org>.github.io`  
+   - Add redirect rule: `lchsredcross.org` → `www.lchsredcross.org`  
+6. In GitHub repo → Settings → Pages:  
+   - Custom domain = `www.lchsredcross.org`  
+   - Enforce HTTPS  
 
-How to Configure Domain with GitHub Pages
------------------------------------------
-1. In the registrar’s DNS settings:
-   - Add a CNAME record: Host = www, Value = <org>.github.io
-     Example: lchs-red-cross-club.github.io
-   - For the root domain (lchsredcross.org without www):
-     - If supported, add ALIAS/ANAME → www.lchsredcross.org
-     - Otherwise, set a URL redirect to https://www.lchsredcross.org
-
-2. In GitHub:
-   - Repo → Settings → Pages → Custom domain = www.lchsredcross.org
-   - Save, then check "Enforce HTTPS"
-
-3. In the repo root, ensure a file named CNAME exists with:
-   www.lchsredcross.org
-
-Handover Process
+Yearly Checklist
 ----------------
-At the start of each school year:
-[ ] Verify the domain is active and resolves correctly  
-[ ] Confirm billing info is still valid  
-[ ] Check that auto-renew is enabled (if new card added)  
-[ ] Make sure the club Gmail account is accessible  
-[ ] Document renewal date and cost in the Web Team README  
+[ ] Verify domain still active in Porkbun  
+[ ] Renewal date updated in **Domain Renewal Reminder (Wiki)**  
+[ ] Auto-renew enabled or renewal completed  
+[ ] Cloudflare DNS still pointing correctly  
+[ ] HTTPS enforced and working  
 
 Renewal Reminder
-================
-• Always track the **next renewal date**.  
-• Update this line each year after renewal:  
-  **Next renewal due: ___________________**  
-• Pin this information in the repo Wiki or as a pinned GitHub Issue so it’s visible.  
-• Missing a renewal means the website will go offline until restored.
+----------------
+- Renewal handled in Porkbun (~$11/year).  
+- Future officers should ensure billing is updated yearly.  
+- Update the renewal date in the Wiki page.  
 
 Contingency Plan
 ----------------
-If the domain expires accidentally:
-• Log into the registrar account with club Gmail  
-• Renew the domain manually (can take up to 24 hours to restore)  
-• If lost completely, re-purchase as soon as possible
+If the domain expires accidentally:  
+• Log into Porkbun with club Gmail → manually renew.  
+• Reactivate DNSSEC and Cloudflare if needed.  
+• Test site after renewal.  
 
 Quick Reference
 ---------------
+Domain: www.lchsredcross.org  
+Registrar: Porkbun  
+DNS: Cloudflare  
 Club Gmail: lchsredcrossclub@gmail.com  
-Registrar Login: (use club Gmail)  
-Renewal Cycle: Every year (~$10)  
-Responsible Roles: Org Owners (President + 1 other officer/advisor)
+Renewal Cost: ~$11/year  
+Responsible: Org Owners (President + trusted officer/advisor)  
 
 End of Domain Management Guide
