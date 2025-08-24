@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lawton Chiles Red Cross Club</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div class="banner-row">
+    <img src="assets/americanredcrosslogo.png" alt="Red Cross Logo" width="300">
+    <div class="title-wrap">
+      <h1>Lawton Chiles Red Cross Club</h1>
+      <p>Lawton Chiles High School&nbsp;| Empowering Youth to Serve &amp; Lead</p>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="gallery.html">Gallery</a> |
+    <a href="timeline.html">Yearly Plan</a>
+  </nav>
+</header>
+
+<main>
+  <section id="mission">
+    <h2>Mission &amp; Purpose</h2>
+    <ul>
+      <li>Educate and empower youth in the spirit of the Red Cross</li>
+      <li>Foster leadership, teamwork, and civic responsibility</li>
+      <li>Channel energy and idealism into humanitarian efforts</li>
+    </ul>
+  </section>
+
+  <section id="activities">
+    <h2>Activities</h2>
+    <ul id="activities-description"></ul>
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="timeline.html" class="btn">View Yearly Action Plan</a>
+    </div>
+  </section>
+
+  <section id="past-activities-preview">
+    <h2>Past Activities</h2>
+    <p>See the great work we’ve done over the years—click below to view our full gallery.</p>
+    <div style="text-align:center; margin-top:1rem;">
+      <a href="gallery.html" class="btn">View Activity Collage</a>
+    </div>
+  </section>
+
+  <section id="join-register">
+    <h2>Join Our Remind &amp; Volunteer</h2>
+    <p style="text-align:center; margin-top:1rem;">
+      <a href="https://www.remind.com/join/lcrc2526"
+         target="_blank" rel="noopener"
+         class="btn">Join our Remind</a>
+      <a href="https://volunteerconnection.redcross.org/?nd=intake&organization_id=7677"
+         target="_blank" rel="noopener"
+         class="btn">Register as a Volunteer</a>
+    </p>
+  </section>
+
+  <!-- New Constitution section on the HOME PAGE -->
+  <section id="club-constitution" aria-labelledby="constitution-heading">
+    <h2 id="constitution-heading">Club Constitution</h2>
+    <p class="constitution-lead">View it below or download a copy.</p>
+
+    <div class="pdf-embed">
+      <object
+        type="application/pdf"
+        aria-label="Club Constitution PDF"
+        width="100%" height="100%">
+        <p style="text-align:center; margin: 1rem 0;">
+          PDF preview not available.
+          <a href="assets/rcc-constitution-public.pdf" class="btn" target="_blank" rel="noopener">
+            Open the PDF
+          </a>
+        </p>
+      </object>
+    </div>
+
+    <p style="text-align:center; margin-top:1rem;">
+      <a href="assets/rcc-constitution-public.pdf" class="btn" download>
+        Download Constitution (PDF)
+      </a>
+    </p>
+
+    <p id="constitution-meta" class="constitution-meta">
+      Last updated: <span data-lastmod>—</span>
+      <span class="dot" aria-hidden="true">·</span>
+      <span data-filesize>PDF</span>
+    </p>
+  </section>
+  <!-- End Constitution section -->
+
+  <section id="board-members">
+    <h2 id="board-year"></h2>
+    <div class="board-grid"></div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Lawton Chiles High School Red Cross Club. All rights reserved.
+</footer>
+
+<!-- in <head> or before </body> -->
+<script src="script.js" defer></script>
+
+</body>
+</html>
+
