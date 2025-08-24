@@ -187,7 +187,7 @@ Renewal Reminder
 ----------------
 • Always track the **next renewal date**.  
 • Update this line each year after renewal:  
-  Next renewal due: ___________________  
+  **Next renewal due: ___________________**  
 • Pin this information in the repo Wiki or as a pinned GitHub Issue so it’s visible.  
 • Missing a renewal means the website will go offline until restored.
 
