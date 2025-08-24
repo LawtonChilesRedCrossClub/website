@@ -184,7 +184,7 @@ At the start of each school year:
 [ ] Document renewal date and cost in the Web Team README  
 
 Renewal Reminder
-----------------
+================
 • Always track the **next renewal date**.  
 • Update this line each year after renewal:  
   **Next renewal due: ___________________**  
