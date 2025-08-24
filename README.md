@@ -118,6 +118,81 @@ End of Web Team Onboarding Guide
 
 
 
+
+
+
+
+Porkbun + Cloudflare DNS — Cost & Setup Guide
+==================================================
+
+Purpose
+-------
+This guide explains the costs and setup steps if the club uses
+**Porkbun as the domain registrar** with **Cloudflare DNS**.
+
+Cost Breakdown (.org domain)
+----------------------------
+- First-year registration: **~$6.68**
+- Annual renewal: **~$10.72/year**
+- Cloudflare DNS: **Free**
+
+Total cost:
+- Year 1: ~$6.68
+- Each subsequent year: ~$10.72
+
+Included in Porkbun price:
+- Free WHOIS privacy (protects club info)
+- Free SSL certificates (via Let’s Encrypt, if using Porkbun DNS)
+- Free email forwarding (up to 20 addresses)
+- Free URL forwarding
+
+Cloudflare DNS adds:
+- Strong, fast, reliable DNS
+- Free performance/security tools
+- DNSSEC support for extra protection
+
+Setup Steps
+-----------
+1. **Buy domain at Porkbun** using club Gmail (lchsredcrossclub@gmail.com).  
+2. In Porkbun, go to DNS → set **nameservers** to Cloudflare’s pair (given after adding domain at Cloudflare).  
+3. In Cloudflare dashboard:  
+   - Add domain  
+   - Verify nameservers are set correctly  
+   - Enable **DNSSEC** (extra protection)  
+4. In GitHub repo:  
+   - Settings → Pages → Custom domain = www.lchsredcross.org  
+   - Check “Enforce HTTPS”  
+5. Test domain → should load in ~15–30 min, HTTPS enforced.  
+
+Yearly Checklist
+----------------
+[ ] Verify domain still active in Porkbun  
+[ ] Renewal date updated in Domain Renewal Reminder Wiki  
+[ ] Cloudflare DNS settings still valid  
+[ ] HTTPS enforced and working  
+
+Budget Reminder
+---------------
+- Renewal is **~$11/year**.  
+- Ensure a club or advisor card is attached in Porkbun.  
+- Update “Next renewal due” in the repo Wiki each year.
+
+End of Cost & Setup Guide
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 LCHS Red Cross Club — Domain Management Guide
 =============================================
 
