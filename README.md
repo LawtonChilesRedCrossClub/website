@@ -1,4 +1,5 @@
-**LCHS Red Cross Club Website — Web Team Onboarding**
+LCHS Red Cross Club Website — Web Team Onboarding
+==================================================
 
 Welcome to the Web Team 🎉  
 This guide is your step-by-step manual for maintaining the club website.  
