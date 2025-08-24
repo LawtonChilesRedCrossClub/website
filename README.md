@@ -116,6 +116,8 @@ End of Web Team Onboarding Guide
 
 
 
+
+
 LCHS Red Cross Club — Domain Management Guide
 ==================================================
 
@@ -126,9 +128,9 @@ This guide explains how to manage and renew the club’s custom domain
 
 Registrar Choice
 ----------------
-We recommend using **Porkbun** or **Cloudflare Registrar** for stability and low renewal costs.
+We recommend using **Cloudflare Registrar** or **Porkbun** for stability and low renewal costs.
+- Cloudflare: ~$10/year renewal, no markups
 - Porkbun: ~$11/year renewal
-- Cloudflare: ~$10/year renewal
 - GoDaddy is *not recommended* — cheap first-year promos but renewals cost $20–25+.
 
 Registrar Account
@@ -137,12 +139,24 @@ Registrar Account
 • Club Gmail: lchsredcrossclub@gmail.com  
 • This ensures that future officers can reset passwords and manage billing.
 
+First-Year Setup (Important)
+----------------------------
+For the 2025 setup (Brandon’s graduating year):
+1. Domain is purchased using Brandon’s personal payment card.  
+2. Account login = club Gmail (so it can be passed down).  
+3. **Auto-renew must be turned OFF** after the first purchase to protect Brandon’s billing info.  
+4. Future officers will need to log into Cloudflare with the club Gmail and  
+   - Add their own billing method (advisor’s card, prepaid card, or school card).  
+   - Re-enable auto-renew before the expiration date.  
+5. Optional: Brandon may choose to prepay 2–3 years to give the club extra time.  
+
 Billing & Renewal
 -----------------
-• Enable **auto-renew** in the registrar settings.  
-• Connect a **club debit card**, prepaid card, or advisor’s card (with reimbursement).  
 • Renewal is around $10–11 per year.  
-• If possible, pay for **3–10 years upfront** to prevent lapses.
+• Preferred: pay multiple years upfront or ensure next officers add billing info.  
+• Future officers should:  
+  - Add their payment method under club Gmail account.  
+  - Enable auto-renew to prevent lapses.  
 
 How to Configure Domain with GitHub Pages
 -----------------------------------------
@@ -165,7 +179,7 @@ Handover Process
 At the start of each school year:
 [ ] Verify the domain is active and resolves correctly  
 [ ] Confirm billing info is still valid  
-[ ] Check that auto-renew is enabled  
+[ ] Check that auto-renew is enabled (if new card added)  
 [ ] Make sure the club Gmail account is accessible  
 [ ] Document renewal date and cost in the Web Team README  
 
