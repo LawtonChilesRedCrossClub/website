@@ -1,5 +1,3 @@
-LCHS Red Cross Club Website — Web Team Onboarding (README-ready)
-
 Purpose
 -------
 This document onboards new Web Team members so the site remains easy to update year after year.
