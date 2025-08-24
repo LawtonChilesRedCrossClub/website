@@ -106,13 +106,14 @@ At the start of each school year:
 • Org Owners: Current President + one trusted officer  
 • Faculty Advisor: (update yearly)  
 
-End of Guide
+End of Web Team Onboarding Guide
 
 
 
 
 
 
+==================================================
 LCHS Red Cross Club — Domain Management Guide
 ==================================================
 
@@ -166,6 +167,14 @@ At the start of each school year:
 [ ] Make sure the club Gmail account is accessible  
 [ ] Document renewal date and cost in the Web Team README  
 
+Renewal Reminder
+----------------
+• Always track the **next renewal date**.  
+• Update this line each year after renewal:  
+  Next renewal due: ___________________  
+• Pin this information in the repo Wiki or as a pinned GitHub Issue so it’s visible.  
+• Missing a renewal means the website will go offline until restored.
+
 Contingency Plan
 ----------------
 If the domain expires accidentally:
@@ -180,4 +189,4 @@ Registrar Login: (use club Gmail)
 Renewal Cycle: Every year (~$10)  
 Responsible Roles: Org Owners (President + 1 other officer/advisor)
 
-End of Guide
+End of Domain Management Guide
