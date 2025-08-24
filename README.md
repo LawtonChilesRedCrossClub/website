@@ -141,14 +141,14 @@ Registrar Account
 
 First-Year Setup (Important)
 ----------------------------
-For the 2025 setup (Brandon’s graduating year):
+For the 2025-2026 setup (Brandon’s graduating year):
 1. Domain is purchased using Brandon’s personal payment card.  
 2. Account login = club Gmail (so it can be passed down).  
 3. **Auto-renew must be turned OFF** after the first purchase to protect Brandon’s billing info.  
 4. Future officers will need to log into Cloudflare with the club Gmail and  
    - Add their own billing method (advisor’s card, prepaid card, or school card).  
    - Re-enable auto-renew before the expiration date.  
-5. Optional: Brandon may choose to prepay 2–3 years to give the club extra time.  
+5. Optional: Brandon may choose to prepay 2–3 years to give the club extra time.
 
 Billing & Renewal
 -----------------
