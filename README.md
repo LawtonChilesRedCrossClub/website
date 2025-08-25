@@ -150,6 +150,8 @@ End of Web Team Onboarding Guide
 
 
 
+
+
 Porkbun + Cloudflare DNS — Cost & Setup Guide
 ==================================================
 
@@ -221,6 +223,8 @@ End of Cost & Setup Guide
 
 
 
+
+
 LCHS Red Cross Club — Domain Management Guide
 (Porkbun Registrar + Cloudflare DNS)
 ==================================================
@@ -255,10 +259,27 @@ Setup Steps
 3. Set Porkbun nameservers → Cloudflare nameservers.  
 4. Enable DNSSEC in Cloudflare, then copy values into Porkbun DNSSEC settings.  
 5. In Cloudflare DNS:  
-   - Add CNAME record: `www` → `<org>.github.io`  
-   - Add redirect rule: `lchsredcross.org` → `www.lchsredcross.org`  
+   - Add CNAME record:  
+     • Name = www  
+     • Target = lawtonchilesredcrossclub.github.io  
+   - Add A records (for root domain):  
+     • @ → 185.199.108.153  
+     • @ → 185.199.109.153  
+     • @ → 185.199.110.153  
+     • @ → 185.199.111.153  
+
+Why 4 A Records?
+----------------
+GitHub Pages provides four different IP addresses.  
+- They are part of a distributed server network (Anycast).  
+- This improves **reliability** (if one IP/server goes down, others still respond).  
+- This improves **performance** (visitors are routed to the nearest server).  
+
+⚠️ You must add **all four** A records.  
+If you only add one, the site may still work, but it will be less reliable.  
+
 6. In GitHub repo → Settings → Pages:  
-   - Custom domain = `www.lchsredcross.org`  
+   - Custom domain = www.lchsredcross.org  
    - Enforce HTTPS  
 
 Yearly Checklist
