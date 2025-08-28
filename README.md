@@ -126,13 +126,13 @@ When merged, their name will appear on the page — and they’ll have learned t
 📆 Yearly Checklist
 --------------------------------------------------
 At the start of each school year:  
-[ ] Update officer names in /content/officers.html  
-[ ] Update meeting times & events  
-[ ] Remove graduated seniors from org  
-[ ] Add new Web Team members  
-[ ] Promote President/VP to Owner  
-[ ] Verify custom domain + HTTPS still active  
-[ ] Confirm club Gmail is accessible  
+- [ ] Update officer names in /content/officers.html  
+- [ ] Update meeting times & events  
+- [ ] Remove graduated seniors from org  
+- [ ] Add new Web Team members  
+- [ ] Promote President/VP to Owner  
+- [ ] Verify custom domain + HTTPS still active  
+- [ ] Confirm club Gmail is accessible  
 
 End of Web Team Onboarding Guide
 
